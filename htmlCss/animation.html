@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation: exampleAnimation 4s ease-in-out 1s infinite alternate;
+    }
+
+    @keyframes exampleAnimation {
+      0% {
+        transform:skew(0deg, 0deg); ;
+      }
+      50% {
+        transform:skew(20deg, 10deg); 
+        background-color: red;
+      }
+      100% {
+        transform:skew(0deg, 0deg); ;
+        background-color: rgb(20, 201, 135);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

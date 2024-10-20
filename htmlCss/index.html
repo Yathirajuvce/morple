@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            height: 100%;
+          width: 100%;
+          border-collapse: collapse;
+          border: 2px solid black;
+        }
+    
+        th, td {
+          padding: 8px;
+          text-align: center;
+          border: 2px solid black;
+
+        }
+    
+        th {
+          background-color: #f4f4f4;
+        }
+    
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+        }
+    
+        tr:hover {
+          background-color: #f1f1f1;
+        }
+      </style>
+</head>
+<body>
+    <!-- <img src="C:\Users\Dell\OneDrive\Desktop\personal\eagle.jpeg" height="750px" width="1500px">
+    <a href="https://www.youtube.com/watch?v=1HeIZNP3w4A&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&index=70" target="_blank">Youtube dsa</a> -->
+    <input type="button" required value="login">
+    <br>
+    <input type="text" placeholder="enter the text here">
+    <br>
+    <a href="C:\Users\Dell\OneDrive\Desktop\personal\fee.jpg" download="fee.jpg">Download PDF</a>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1HeIZNP3w4A?si=lVyt4s5AV-AClcYz" title="YouTube video player" sandbox="allow-scripts allow-same-origin" frameborder="50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+<br>
+<video width="200" height="100" controls poster="poster.jpg">
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    <source src="movie.webm" type="video/webm">
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish">
+    Your browser does not support the video tag.
+  </video>
+  <br>
+
+  <table>
+    <caption>Student Grades</caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Subject</th>
+        <th scope="col">Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">Alice</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        
+        <td>dsa</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>os</td>
+        <td>A-</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Average Grade</td>
+        <td>A-</td>
+      </tr>
+    </tfoot>
+  </table>
+      <br><br>
+  <form action="/submit-form" method="post" style="justify-content: center;">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+    <label for="like">like my newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+
+    <label for="file">Upload file:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="quantity">Quantity (1-10):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"><br><br>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+
+    <label for="color">Favorite color:</label>
+    <input type="color" id="color" name="color"><br><br>
+
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search" placeholder="Search..."><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+  
+  
+  
+</body>
+</html>

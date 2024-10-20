@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 1500px; /* Just to create scrollable content */
+      padding: 20px;
+    }
+    .static {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .relative {
+      background-color: #e0e0e0;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .absolute {
+      background-color: #d0d0d0;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      top: 100px;
+      left: 50px;
+    }
+    .fixed {
+      background-color: #c0c0c0;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .sticky-container {
+      background-color: #b0b0b0;
+      padding: 20px;
+      margin-bottom: 20px;
+      height: 400px; /* Height to demonstrate scrolling */
+      overflow-y: auto;
+    }
+    .sticky {
+      background-color: #a0a0a0;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: sticky;
+      top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="static">
+      <h2>Static Positioning</h2>
+      <p>This is a static positioned element. It remains in the normal flow of the document.</p>
+    </div>
+
+    <div class="relative">
+      <h2>Relative Positioning</h2>
+      <p>This is a relatively positioned element. It moves relative to its normal position.</p>
+      <div class="absolute">
+        <h3>Absolute Positioning Inside Relative</h3>
+        <p>This is an absolutely positioned element inside a relative container.</p>
+      </div>
+    </div>
+
+    <div class="fixed">
+      <h2>Fixed Positioning</h2>
+      <p>This is a fixed positioned element. It stays fixed relative to the viewport.</p>
+    </div>
+
+    <div class="sticky-container">
+      <h2>Sticky Positioning</h2>
+      <p>This is a sticky container. Scroll down to see the sticky element.</p>
+      <div class="sticky">
+        <h3>Sticky Element</h3>
+        <p>This element becomes sticky after scrolling past its container.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

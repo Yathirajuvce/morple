@@ -1,0 +1,29 @@
+ul li a{
+    font-style: oblique;
+    text-decoration: none;
+  
+}
+/* ul li #about{
+    color: red;
+} */
+a:hover{
+    color:green;
+}
+
+.order{
+    justify-content: center;
+    text-decoration:solid;
+}
+a[href="https://www.youtube.com/watch?v=1HeIZNP3w4A&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&index=70"]{
+    text-decoration: none;
+    color: orange;
+    text-align: center;
+}
+/* Attribute selector for id 'about' */
+ li [id="about"] {
+    color: red; /* Example style */
+  }
+  
+   li{
+    text-transform: uppercase;
+  }

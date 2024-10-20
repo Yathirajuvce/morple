@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transition with All Properties</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: width 5s linear 1s, background-color 2s ease-in-out 1s;
+      /* Transition for width and background color with timing function and delay */
+    }
+
+    .box:hover {
+      width: 500px; /* New width when hovered */
+      background-color: red; /* New background color when hovered */
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
